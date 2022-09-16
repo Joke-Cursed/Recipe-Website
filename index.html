@@ -4,62 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Recipe| Ingredients| Contact </title>
+    <title>Recipe| Ingredients</title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="logo">Food <span>House</span></a>
+        <ul>
+        <li><a href="index.html" class="active">Home </a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+       <div class="inner-text">
+            <h1>The Food House</h1>
+            <p> Good food changes the mood</p>
+            <!-- <a href="#"> Read more <i class="fas fa fa-arrow-right"> </i></a>
+             -->
+       
+        </div> 
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <p> <i>Have feedback for us? We’d love to hear from you!</i></p>
+        </div>
+        <div class="subscribe">
+            <input type="text" name="Feedback"  placeholder="Enter your Feedback" required><br>
+            <button type="submit">Share Feedback <i class="fas fa fa-arrow-right"> </i></button>
+        </div>
+    </section>
+    <div class="recipes"> Our Special Recipes</div>
+    <!-- Info cards -->
+    <section class="info">
+        <div class="inner-info">
+            <div class="card">
+                <img src="Images/Dalfry.jpg" alt="">
+                <h3>Dal Fry</h3>
+                <span> Ingredients : Dal,Veggies, Green Chilies, Curry Leaves, Asafoetida Powder (hing), Coriander leaves (cilantro), Kasuri Methi (dry fenugreek leaves),Additional Seasonings.</span>
+                
+                <p>Prepation time:30 minutes, Cook time:30 Minutes</p>
+                <a href="dal_fry.html" class="btn">View recipe</a>
+            </div>
+            <div class="card">
+                <img src="Images/Biryani.jpg" alt="">
+                <h3>Biryani</h3>
+                <span>Rice,cumin seeds, onions, garlic-ginger paste, mixed vegetables,coriander powder, garam masala,turmeric powder, salt ,chilli powder, green chillies, lemon juicer,coriander leaves,oil. </span>
+                <p>Prepation time:30 minutes, Cook time:40 Minutes</p>
+                <a href="Biryani.html" class="btn"> View recipe</a>
+            </div>
+            <div class="card">
+                <img src="Images/mix_veg.jpg" alt="">
+                <h3>Mix Veg</h3>
+                <span> Ingredients : Veggies, Green Chilies, Curry Leaves, Asafoetida Powder (hing), Coriander leaves (cilantro), Kasuri Methi (dry fenugreek leaves),Additional Seasonings.</span>
+                
+                <p>Prepation time:15 minutes, Cook time:30 Minutes</p>
+                <a href="mix_veg.html" class="btn">View recipe</a>
+            </div>
+            <div class="card">
+                <img src="Images/burger.jpg" alt="">
+                <h3>Burger</h3>
+                <span> Ingredients : Veggies, Bun, sauces,allu tikki, oil ,Additional Seasonings.</span>
+                
+                <p>Prepation time:10 minutes, Cook time:10 Minutes</p>
+                <a href="burger.html" class="btn">View recipe</a>
+            </div>
+            <div class="card">
+                <img src="Images/Momos.jpg" alt="">
+                <h3>Momos</h3>
+                <span>Maida,Salt,veggies,Garlic, ,Soya sauce Vinegar, Black pepper</span>
+                <p>Prepation time:30 minutes, Cook time:10 Minutes</p>
+                <a href="momos.html" class="btn"> View recipe</a>
+            </div>
+            <div class="card">
+                <img src="Images/Samosas.jpg" alt="">
+                <h3>Samosas</h3>
+                <span> Ingredients : Veggies,Cumin Seeds,potatoes,Maida, carom seeds,salt and other spices.</span>
+                
+                <p>Prepation time:20 minutes, Cook time:10 Minutes</p>
+              
+                <a href="samosa.html" class="btn"> View recipe</a>
+            </div>
+       
+            
+            <!-- <div class="card">
+                <img src="#" alt="">
+                <h3>Kitechen</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis doloribus natus repellat accusamus! Modi, rem quaerat. Deserunt modi laboriosam mollitia possimus nihil beatae repellat aspernatur, vitae officia! Doloribus, dolor deleniti!</p>
+                <a href="#" class="btn">More info</a>
+            </div> -->
+        </div>
+
+    </section>
+
+    <!-- <footer -->
+        <footer>&copy;    <span>2022 || </span>TheFoodHouse Built by Asha Mehta </footer>
+
+
     
-        <!-- Navbar -->
-        <nav>
-            <a href="index.html" class="logo">Food <span>House</span></a>
-            <ul>
-            <li><a href="index.html" >Home </a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-             
-            </ul>
-        </nav>
-
-        <section class="contact">
-            <div class="contact-details">
-            <div class="inner-part">
-                <div>
-                    <p></p>
-                </div>
-                <div>
-                    <p>Have feedback for us? We’d love to hear from you!</p>
-                </div>
-                <div>
-                    <p></p>
-                </div>
-            </div>
-            <br><br>
-            <div class="form">
-                <form action="#">
-                    <label for="Name">User Name</label>
-                    <input type="text" name="name" placeholder="Enter your name" required><br>
-                    <label for="Email">Email</label><br>
-                    <input type="Email" name="name" placeholder="Enter your Email" required>
-                    <label for="Feedback">Feedback</label>
-                    <input type="Text" name="Text" placeholder="Please Share your feedback"required><br> 
-                    <input type="submit"value="Share Feedback">
-
-                </form>
-
-                </form>
-            </div>
-
-         
-
-
-
-</div>
-</section>
-   <!-- <footer -->
-    <footer>&copy;    <span>2022 || </span>TheFoodHouse Built by Asha Mehta </footer>
 </body>
 </html>
